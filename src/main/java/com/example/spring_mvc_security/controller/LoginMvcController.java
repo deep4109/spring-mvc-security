@@ -24,4 +24,16 @@ public class LoginMvcController {
 
         return "access-denied";
     }
+
+    @GetMapping("/leaders")
+    public String showLeaders() {
+
+        return "leaders";
+    }
+
+    @GetMapping("/systems")
+    public String showSystems() {
+
+        return "systems";
+    }
 }

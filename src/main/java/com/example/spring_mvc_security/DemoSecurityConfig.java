@@ -56,7 +56,7 @@ public class DemoSecurityConfig {
         JdbcUserDetailsManager jdbcUserDetailsManager = new JdbcUserDetailsManager(dataSource);
 
         //password for all user john fun123
-        //define query
+        //define query Note: This is custom table method
         jdbcUserDetailsManager.setUsersByUsernameQuery(
                 "select user_id,pw,active from members where user_id=?"
         );
